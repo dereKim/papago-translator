@@ -1,0 +1,24 @@
+<idea-plugin>
+    <id>papagotranslator</id>
+    <name>Papago translator</name>
+    <vendor email="sagajin@gmail.com" url="https://github.com/jin5u">Jin5u</vendor>
+
+    <description><![CDATA[
+        Translation by papago
+    ]]></description>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <projectConfigurable groupId="tools" displayName="Papago Translator" id="forms.config.PapagoTranslatorConfiguable" instance="forms.config.PapagoTranslatorConfiguable" />
+        <projectService serviceInterface="forms.config.PapagoTranslatorConfig" serviceImplementation="forms.config.PapagoTranslatorConfig"/>
+    </extensions>
+
+    <actions>
+        <action id="ShortKeyAction" class="actions.PreviewAction" text="do translate" description="" >
+            <keyboard-shortcut first-keystroke="alt 1" keymap="$default"/>
+        </action>
+        <action id="ShortKeyActionRightNow" class="actions.TranslateAction" text="do translate right now" description="" >
+            <keyboard-shortcut first-keystroke="alt 2" keymap="$default"/>
+        </action>
+    </actions>
+
+</idea-plugin>
