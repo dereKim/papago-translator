@@ -1,11 +1,14 @@
 <idea-plugin>
     <id>papagotranslator</id>
     <name>Papago translator</name>
+    <version>0.0.1</version>
     <vendor email="sagajin@gmail.com" url="https://github.com/jin5u">Jin5u</vendor>
 
     <description><![CDATA[
         Translation by papago
     ]]></description>
+
+    <idea-version since-build="171.3566.24" until-build="181.*" />
 
     <extensions defaultExtensionNs="com.intellij">
         <projectConfigurable groupId="tools" displayName="Papago Translator" id="forms.config.PapagoTranslatorConfiguable" instance="forms.config.PapagoTranslatorConfiguable" />
