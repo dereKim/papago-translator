@@ -61,8 +61,8 @@ public class PapagoRequest {
             alert.pack();
             Utils.setCenter(alert);
             alert.setVisible(true);
-
             return null;
+
         }
 
         BufferedReader rd = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
