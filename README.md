@@ -9,15 +9,19 @@
 ## 사용법
 ### 확인 후 번역
 단축키 : ```option+1``` ```alt+1(win)```
+
 ![function-1](./screenshot/function-1.gif)
 
 ### 바로 번역
 단축키 : ```option+2``` ```alt+2(win)```
+
 ![function-2](./screenshot/function-2.gif)
 
 ## 키 발급 방법
 1. Papago() 개발자 사이트에 접속하여 애플리케이션을 등록합니다.
+
  ( https://developers.naver.com/apps/#/list )
+ 
 ![어플리케이션등록](./screenshot/regist-application.png)
  
  * 사용 API 에서 Papago NMT번역 선택
@@ -26,4 +30,5 @@
  * 등록하기 버튼 클릭 후 생성 된 Client ID, Client Secret
  
 2. Preferences -> tools -> Papago Translator 메뉴를 열어 위 1번 항목의 절차를 통해 발급 받은 client ID, client secret를 등록합니다.
+
 ![키등록](./screenshot/apply-id-and-key.png)
