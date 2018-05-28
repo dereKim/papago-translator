@@ -5,8 +5,31 @@
     <vendor email="sagajin@gmail.com" url="https://github.com/jin5u">Jin5u</vendor>
 
     <description><![CDATA[
-        Translation by papago
+      <h1>Translator by Papago</h1>
+      <br/>
+      <b>
+      <a href="https://github.com/jin5u/papago-translator">GitHub</a>
+      </b>
+      <br/>
+      <br/>
+      <strong>Papago Translation plugin Only Korean to English</strong>
+      <br/>
+      <ul>
+        <li>https://github.com/jin5u/papago-translator : option+1</li>
+        <li>An immediate translation : option+2</li>
+      </ul>
+      <br/>
+      <br/>
+      <i>Compiled with Java 1.8</i>
     ]]></description>
+
+    <change-notes><![CDATA[
+      <a href="https://github.com/jin5u/papago-translator"><b>v.0.0.1</b></a> (2018-5-28) <br/><br/>
+      <ul>
+        <li>0.0.1: Project initiate</li>
+      </ul>
+    ]]>
+    </change-notes>
 
     <idea-version since-build="171.3566.24" until-build="181.*" />
 
