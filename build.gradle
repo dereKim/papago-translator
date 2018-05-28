@@ -24,6 +24,7 @@ allprojects {
 intellij {
     pluginName 'PapagoTranslator'
     updateSinceUntilBuild false
+    version '2018.1'
 }
 
 group 'sagajin'
@@ -35,13 +36,4 @@ sourceCompatibility = 1.8
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.5'
-}
-
-intellij {
-    version '2018.1'
-}
-patchPluginXml {
-    changeNotes """
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>"""
 }

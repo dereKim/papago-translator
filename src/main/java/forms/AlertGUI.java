@@ -42,7 +42,7 @@ public class AlertGUI extends JDialog {
     public void openWithText(String text) {
         label.setText(text);
         JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(this);
-        Utils.setCenter(frame);
+        Utils.UI.setCenter(frame);
         frame.setVisible(true);
     }
 

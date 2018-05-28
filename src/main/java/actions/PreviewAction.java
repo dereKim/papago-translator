@@ -16,20 +16,17 @@ public class PreviewAction extends AnAction {
         if ( editor == null ) return;
 
         String text = editor.getSelectionModel().getSelectedText();
-
         if (text == null || text.equals(""))    return;
 
         PapagoTranslatorConfig config = PapagoTranslatorConfig.getInstance(event.getRequiredData(CommonDataKeys.PROJECT));
 
-        String clientId = config.getClientId();
-        String clientSecret = config.getClientSecret();
+        PapagoRequest request = new PapagoRequest(config.getClientId(), config.getClientSecret());
 
-        PapagoRequest request = new PapagoRequest(clientId, clientSecret);
         String translatedText = request.getTranslatedText(text);
 
         if (translatedText == null || translatedText.equals("")) return;
 
-        PreviewGUI middleForm = new PreviewGUI(event);
-        middleForm.openWithText(translatedText);
+        PreviewGUI previewGUI = new PreviewGUI(event);
+        previewGUI.openWithText(translatedText);
     }
 }

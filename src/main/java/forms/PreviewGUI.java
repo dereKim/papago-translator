@@ -37,10 +37,10 @@ public class PreviewGUI {
             @Override
             public void mousePressed(MouseEvent e) {
                 if (textField.getText().trim().equals("")) {
-                    Utils.closeFrame(panel);
+                    Utils.UI.closeFrame(panel);
                 } else {
-                    replaceSelectedText(getTextFiledValue());
-                    Utils.closeFrame(panel);
+                    Utils.UI.replaceSelectedText(editor, getTextFiledValue());
+                    Utils.UI.closeFrame(panel);
                 }
                 super.mousePressed(e);
             }
@@ -50,10 +50,10 @@ public class PreviewGUI {
             public void keyPressed(KeyEvent e) {
 
                 if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
-                    Utils.closeFrame(panel);
+                    Utils.UI.closeFrame(panel);
                 } else if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-                    replaceSelectedText(getTextFiledValue());
-                    Utils.closeFrame(panel);
+                    Utils.UI.replaceSelectedText(editor, getTextFiledValue());
+                    Utils.UI.closeFrame(panel);
                 }
                 super.keyTyped(e);
             }
@@ -64,18 +64,6 @@ public class PreviewGUI {
         return textField.getText();
     }
 
-    public void replaceSelectedText(String translatedText) {
-        final Document document = editor.getDocument();
-        final SelectionModel selectionModel = editor.getSelectionModel();
-
-        final int start = selectionModel.getSelectionStart();
-        final int end = selectionModel.getSelectionEnd();
-        WriteCommandAction.runWriteCommandAction(editor.getProject(), () ->
-                document.replaceString(start, end, translatedText)
-        );
-        selectionModel.removeSelection();
-    }
-
     public void openWithText(String text) {
 
         if (text == null || text.trim().equals("")) return;
@@ -83,7 +71,7 @@ public class PreviewGUI {
         textField.setText(text);
         textField.selectAll();
 
-        Utils.setCenter(frame);
+        Utils.UI.setCenter(frame);
         frame.setVisible(true);
     }
 

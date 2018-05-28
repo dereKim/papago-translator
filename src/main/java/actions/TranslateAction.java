@@ -4,9 +4,9 @@ import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.CommonDataKeys;
 import com.intellij.openapi.editor.Editor;
-import forms.PreviewGUI;
 import forms.config.PapagoTranslatorConfig;
 import helper.PapagoRequest;
+import helper.Utils;
 
 public class TranslateAction extends AnAction {
 
@@ -21,16 +21,13 @@ public class TranslateAction extends AnAction {
 
         PapagoTranslatorConfig config = PapagoTranslatorConfig.getInstance(event.getRequiredData(CommonDataKeys.PROJECT));
 
-        String clientId = config.getClientId();
-        String clientSecret = config.getClientSecret();
+        PapagoRequest request = new PapagoRequest(config.getClientId(), config.getClientSecret());
 
-        PapagoRequest request = new PapagoRequest(clientId, clientSecret);
         String translatedText = request.getTranslatedText(text);
 
         if (translatedText == null || translatedText.equals("")) return;
 
-        PreviewGUI middleForm = new PreviewGUI(event);
-        middleForm.replaceSelectedText(translatedText);
+        Utils.UI.replaceSelectedText(editor, translatedText);
     }
 }
 
