@@ -1,5 +1,5 @@
 <idea-plugin>
-    <id>papagotranslator</id>
+    <id>org.intellij.plugin.jin5u.papagotranslator</id>
     <name>Papago translator</name>
     <version>0.0.1</version>
     <vendor email="sagajin@gmail.com" url="https://github.com/jin5u">Jin5u</vendor>

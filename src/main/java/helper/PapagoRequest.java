@@ -27,7 +27,6 @@ public class PapagoRequest {
 
     private String clientId;
     private String secret;
-
     private ObjectMapper om = new ObjectMapper();
 
     public PapagoRequest(String clientId, String clientSecret) {
@@ -45,16 +44,18 @@ public class PapagoRequest {
         post.addHeader(SECRET_KEY, secret);
 
         List<NameValuePair> params = new ArrayList<>();
-        params.add(new BasicNameValuePair("SOURCE", SOURCE));
-        params.add(new BasicNameValuePair("TARGET", TARGET));
+        params.add(new BasicNameValuePair("source", SOURCE));
+        params.add(new BasicNameValuePair("target", TARGET));
         params.add(new BasicNameValuePair("text", text));
 
         post.setEntity(new UrlEncodedFormEntity(params, "UTF-8"));
-
+// Potato
         HttpResponse response = client.execute(post);
 
         if (response.getStatusLine().getStatusCode() != HttpStatus.SC_OK) {
             String msg = String.format("Error: status code is %d.", response.getStatusLine().getStatusCode());
+
+            System.out.println(response.getStatusLine().getReasonPhrase());
 
             AlertGUI alert = new AlertGUI();
             alert.setText(msg);
@@ -66,7 +67,7 @@ public class PapagoRequest {
         }
 
         StringBuilder result = new StringBuilder();
-        InputStreamReader is = new InputStreamReader(response.getEntity().getContent(), "utf-8");
+        InputStreamReader is = new InputStreamReader(response.getEntity().getContent());
 
         try (BufferedReader rd = new BufferedReader(is)) {
             String line;
