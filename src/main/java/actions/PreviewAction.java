@@ -25,7 +25,7 @@ public class PreviewAction extends AnAction {
         String clientSecret = config.getClientSecret();
 
         PapagoRequest request = new PapagoRequest(clientId, clientSecret);
-        String translatedText = request.getTranslateText(text);
+        String translatedText = request.getTranslatedText(text);
 
         if (translatedText == null || translatedText.equals("")) return;
 

@@ -16,10 +16,10 @@
     </extensions>
 
     <actions>
-        <action id="ShortKeyAction" class="actions.PreviewAction" text="do translate" description="" >
+        <action id="ShortKeyAction" class="actions.PreviewAction" text="translate" description="" >
             <keyboard-shortcut first-keystroke="alt 1" keymap="$default"/>
         </action>
-        <action id="ShortKeyActionRightNow" class="actions.TranslateAction" text="do translate right now" description="" >
+        <action id="ShortKeyActionRightNow" class="actions.TranslateAction" text="translate right now" description="" >
             <keyboard-shortcut first-keystroke="alt 2" keymap="$default"/>
         </action>
     </actions>

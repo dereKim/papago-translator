@@ -79,7 +79,8 @@ public class PapagoRequest {
 
     }
 
-    public String getTranslateText(String text) {
+    // return translated string
+    public String getTranslatedText(String text) {
         String translatedText = "";
         try {
             PapagoResponse response = request(text);
@@ -92,6 +93,9 @@ public class PapagoRequest {
         }
         return translatedText;
     }
+
+
+
 
 
 
