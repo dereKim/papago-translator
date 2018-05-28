@@ -18,7 +18,7 @@
 ![function-2](./screenshot/function-2.gif)
 
 ## 키 발급 방법
-1. Papago() 개발자 사이트에 접속하여 애플리케이션을 등록합니다.
+1. Naver 개발자 사이트에 접속하여 ( 회원가입/로그인 후 ) 애플리케이션을 등록합니다.
 
  ( https://developers.naver.com/apps/#/list )
  
