@@ -30,6 +30,6 @@
  * 등록하기 버튼 클릭 후 생성 된 Client ID, Client Secret
  
  
-###2. Preferences -> tools -> Papago Translator 메뉴를 열어 위 1번 항목의 절차를 통해 발급 받은 client ID, client secret를 등록합니다.
+### 2. Preferences -> tools -> Papago Translator 메뉴를 열어 위 1번 항목의 절차를 통해 발급 받은 client ID, client secret를 등록합니다.
 
 ![키등록](./screenshot/apply-id-and-key.png)
