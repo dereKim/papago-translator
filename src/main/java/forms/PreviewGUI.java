@@ -22,7 +22,6 @@ public class PreviewGUI {
     private Editor editor;
     private AnActionEvent event;
 
-// 감자
     public PreviewGUI(AnActionEvent event) {
         this.frame = new JFrame("Result");
         this.frame.setContentPane(panel);
