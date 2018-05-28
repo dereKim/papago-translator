@@ -19,11 +19,11 @@ import java.util.List;
 
 public class PapagoRequest {
 
-    private final String SOURCE = "ko";
-    private final String TARGET = "en";
-    private final String URL = "https://openapi.naver.com/v1/papago/n2mt";
-    private final String CLIENT_ID_KEY = "X-Naver-Client-Id";
-    private final String SECRET_KEY = "X-Naver-Client-Secret";
+    private static final String SOURCE = "ko";
+    private static final String TARGET = "en";
+    private static final String URL = "https://openapi.naver.com/v1/papago/n2mt";
+    private static final String CLIENT_ID_KEY = "X-Naver-Client-Id";
+    private static final String SECRET_KEY = "X-Naver-Client-Secret";
 
     private String clientId;
     private String secret;
@@ -35,7 +35,7 @@ public class PapagoRequest {
         this.secret = clientSecret;
     }
 
-    public PapagoResponse request(String text)throws IOException {
+    private PapagoResponse request(String text)throws IOException {
 
         HttpClient client = HttpClientBuilder.create().build();
 
@@ -65,17 +65,17 @@ public class PapagoRequest {
 
         }
 
-        BufferedReader rd = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
+        StringBuilder result = new StringBuilder();
+        InputStreamReader is = new InputStreamReader(response.getEntity().getContent(), "utf-8");
 
-        StringBuffer result = new StringBuffer();
-        String line = "";
-        while ((line = rd.readLine()) != null) {
-            result.append(line);
+        try (BufferedReader rd = new BufferedReader(is)) {
+            String line;
+            while ((line = rd.readLine()) != null) {
+                result.append(line);
+            }
         }
 
-        PapagoResponse res = om.readValue(result.toString(), PapagoResponse.class);
-
-        return res;
+        return om.readValue(result.toString(), PapagoResponse.class);
 
     }
 

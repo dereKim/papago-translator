@@ -10,10 +10,6 @@ public class PapagoResponse {
         return message;
     }
 
-    public void setMessage(Message message) {
-        this.message = message;
-    }
-
     public static class Message {
         @JsonProperty("@type")
         private String type;
