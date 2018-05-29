@@ -19,7 +19,6 @@ import java.awt.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -93,24 +92,5 @@ public class Utils {
             return result.toString();
         }
     }
-
-    public static class Lang{
-        public static String getLangCode(int idx) {
-            switch (idx){
-                case 1: return "ko";
-                case 2: return "en";
-                case 3: return "zh-CN";
-                case 4: return "zh-TW";
-                case 5: return "es";
-                case 6: return "fr";
-                case 7: return "vi";
-                case 8: return "th";
-                case 9: return "id";
-            }
-
-            return "";
-        }
-    }
-
 
 }

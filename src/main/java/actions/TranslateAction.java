@@ -17,7 +17,6 @@ public class TranslateAction extends AnAction {
         if ( editor == null ) return;
 
         String text = editor.getSelectionModel().getSelectedText();
-
         if (text == null || text.equals(""))    return;
 
         PapagoTranslatorConfig config = PapagoTranslatorConfig.getInstance(event.getRequiredData(CommonDataKeys.PROJECT));

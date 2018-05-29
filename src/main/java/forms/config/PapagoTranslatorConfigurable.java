@@ -9,12 +9,12 @@ import org.jetbrains.annotations.Nullable;
 
 import javax.swing.*;
 
-public class PapagoTranslatorConfiguable implements SearchableConfigurable {
+public class PapagoTranslatorConfigurable implements SearchableConfigurable {
 
     private PapagoTranslatorConfigGUI gui;
     private Project project;
 
-    public PapagoTranslatorConfiguable(@NotNull Project project) {
+    public PapagoTranslatorConfigurable(@NotNull Project project) {
         this.project = project;
     }
 
@@ -36,13 +36,13 @@ public class PapagoTranslatorConfiguable implements SearchableConfigurable {
     @Nullable
     @Override
     public String getHelpTopic() {
-        return "forms.config.PapagoTranslatorConfiguable";
+        return "forms.config.PapagoTranslatorConfigurable";
     }
 
     @NotNull
     @Override
     public String getId() {
-        return "forms.config.PapagoTranslatorConfiguable";
+        return "forms.config.PapagoTranslatorConfigurable";
     }
 
 

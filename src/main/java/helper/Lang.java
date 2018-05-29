@@ -4,21 +4,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public enum Lang {
-    /**
-     * ko<->en, ko<->zh-CN, ko<->zh-TW, ko<->es, ko<->fr, ko<->vi, ko<->th, ko<->id, en<->ja, en<->fr 조합만 가능
-     *
-     * Korean
-     * English
-     * Japanese
-     * Simplified Chinese
-     * Traditional Chinese
-     * Spanish
-     * French
-     * Vietnamese
-     * Teguk
-     * Indonesian
-     */
-
     KO(0, "ko", "Korean", Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9)),
     EN(1, "en", "English", Arrays.asList(0, 2, 6)),
     JA(2, "ja", "Japanese", Arrays.asList(0, 1)),
@@ -27,7 +12,7 @@ public enum Lang {
     ES(5, "es", "Spanish", Arrays.asList(0)),
     FR(6, "fr", "French", Arrays.asList(0, 1)),
     VI(7, "vi", "Vietnamese", Arrays.asList(0)),
-    TH(8, "th", "Teguk", Arrays.asList(0)),
+    TH(8, "th", "Thai", Arrays.asList(0)),
     ID(9, "id", "Indonesian", Arrays.asList(0));
 
     private int idx;

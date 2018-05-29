@@ -15,7 +15,6 @@ public class PapagoTranslatorConfig implements PersistentStateComponent<PapagoTr
     private int fromIndex;
     private int toIndex;
 
-    // Potato
     @Override
     public PapagoTranslatorConfig getState() {
         return this;

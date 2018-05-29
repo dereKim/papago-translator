@@ -30,7 +30,7 @@
         <li>Korean <-> Spanish</li>
         <li>Korean <-> French</li>
         <li>Korean <-> Vietnamese</li>
-        <li>Korean <-> Teguk</li>
+        <li>Korean <-> Thai</li>
         <li>Korean <-> Indonesian</li>
         <li>English <-> Japanese</li>
         <li>English <-> French</li>
@@ -52,7 +52,7 @@
     <idea-version since-build="171.3566.24" until-build="181.*" />
 
     <extensions defaultExtensionNs="com.intellij">
-        <projectConfigurable groupId="tools" displayName="Papago Translator" id="forms.config.PapagoTranslatorConfiguable" instance="forms.config.PapagoTranslatorConfiguable" />
+        <projectConfigurable groupId="tools" displayName="Papago Translator" id="forms.config.PapagoTranslatorConfigurable" instance="forms.config.PapagoTranslatorConfigurable" />
         <projectService serviceInterface="forms.config.PapagoTranslatorConfig" serviceImplementation="forms.config.PapagoTranslatorConfig"/>
     </extensions>
 
