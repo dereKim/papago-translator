@@ -43,7 +43,7 @@
     <change-notes><![CDATA[
       <a href="https://github.com/jin5u/papago-translator/releases/tag/v0.1.0"><b>v.0.1.0</b></a><br/><br/>
       <ul>
-        <li>0.1.0: Apply multiple languages ( Translatable combination <a href="https://developers.naver.com/docs/nmt/reference/#3--%EC%9A%94%EC%B2%AD-%EB%B3%80%EC%88%98">list</a>) </li>
+        <li>0.1.0: Support for multilingual translations</li>
         <li>0.0.1: Project initiate</li>
       </ul>
     ]]>
