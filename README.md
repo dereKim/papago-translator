@@ -38,11 +38,11 @@
 
 ### Change notes
 
-##v 0.1.0 ( 2018-05-29 )
+## v 0.1.0 ( 2018-05-29 )
 
 * Support for multilingual translations ()
 
-##v 0.0.1 ( 2018-05-28 )
+## v 0.0.1 ( 2018-05-28 )
 
 * Project Initiate.
 
