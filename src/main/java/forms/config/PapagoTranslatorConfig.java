@@ -12,7 +12,10 @@ public class PapagoTranslatorConfig implements PersistentStateComponent<PapagoTr
 
     private String clientId = "";
     private String clientSecret = "";
+    private int fromIndex;
+    private int toIndex;
 
+    // Potato
     @Override
     public PapagoTranslatorConfig getState() {
         return this;
@@ -41,5 +44,21 @@ public class PapagoTranslatorConfig implements PersistentStateComponent<PapagoTr
 
     public void setClientSecret(String clientSecret) {
         this.clientSecret = clientSecret;
+    }
+
+    public int getFromIndex() {
+        return fromIndex;
+    }
+
+    public void setFromIndex(int fromIndex) {
+        this.fromIndex = fromIndex;
+    }
+
+    public int getToIndex() {
+        return toIndex;
+    }
+
+    public void setToIndex(int toIndex) {
+        this.toIndex = toIndex;
     }
 }

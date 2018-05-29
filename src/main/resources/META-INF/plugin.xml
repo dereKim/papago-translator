@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>org.intellij.plugin.jin5u.papagotranslator</id>
     <name>Papago translator</name>
-    <version>0.0.1</version>
+    <version>0.1.0</version>
     <vendor email="sagajin@gmail.com" url="https://github.com/jin5u">Jin5u</vendor>
 
     <description><![CDATA[
@@ -26,6 +26,7 @@
     <change-notes><![CDATA[
       <a href="https://github.com/jin5u/papago-translator"><b>v.0.0.1</b></a> (2018-5-28) <br/><br/>
       <ul>
+        <li>0.1.0: Apply multiple languages ( A translatable combination <a href="https://developers.naver.com/docs/nmt/reference/#3--%EC%9A%94%EC%B2%AD-%EB%B3%80%EC%88%98">list</a>) </li>
         <li>0.0.1: Project initiate</li>
       </ul>
     ]]>

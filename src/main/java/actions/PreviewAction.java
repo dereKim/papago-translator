@@ -6,6 +6,7 @@ import com.intellij.openapi.actionSystem.CommonDataKeys;
 import com.intellij.openapi.editor.Editor;
 import forms.PreviewGUI;
 import forms.config.PapagoTranslatorConfig;
+import helper.Lang;
 import helper.PapagoRequest;
 
 public class PreviewAction extends AnAction {
@@ -20,7 +21,11 @@ public class PreviewAction extends AnAction {
 
         PapagoTranslatorConfig config = PapagoTranslatorConfig.getInstance(event.getRequiredData(CommonDataKeys.PROJECT));
 
-        PapagoRequest request = new PapagoRequest(config.getClientId(), config.getClientSecret());
+        PapagoRequest request = new PapagoRequest(
+                config.getClientId(),
+                config.getClientSecret(),
+                Lang.getInstance(config.getFromIndex()),
+                Lang.getInstance(config.getToIndex()));
 
         String translatedText = request.getTranslatedText(text);
 

@@ -1,5 +1,6 @@
 package forms.config;
 
+import com.intellij.openapi.options.ConfigurationException;
 import com.intellij.openapi.options.SearchableConfigurable;
 import com.intellij.openapi.project.Project;
 import org.jetbrains.annotations.Nls;
@@ -16,6 +17,7 @@ public class PapagoTranslatorConfiguable implements SearchableConfigurable {
     public PapagoTranslatorConfiguable(@NotNull Project project) {
         this.project = project;
     }
+
 
     @Nullable
     @Override
@@ -55,7 +57,7 @@ public class PapagoTranslatorConfiguable implements SearchableConfigurable {
     }
 
     @Override
-    public void apply() {
+    public void apply() throws ConfigurationException {
         gui.apply();
     }
 }

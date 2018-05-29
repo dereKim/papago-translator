@@ -27,8 +27,8 @@ intellij {
     version '2018.1'
 }
 
-group 'sagajin'
-version '0.0.1'
+group 'jin5u'
+version '0.1.0'
 
 sourceCompatibility = 1.8
 
