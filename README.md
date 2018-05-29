@@ -40,7 +40,7 @@
 
 ## v 0.1.0 ( 2018-05-29 )
 
-* Support for multilingual translations ()
+* Support for multilingual translations
 
 ## v 0.0.1 ( 2018-05-28 )
 
