@@ -8,11 +8,11 @@
       <h1>Translator by Papago</h1>
       <br/>
       <b>
-      <a href="https://github.com/jin5u/papago-translator">GitHub</a>
+      <a href="https://github.com/jin5u/papago-translator/releases/tag/v0.1.0">GitHub</a>
       </b>
       <br/>
       <br/>
-      <strong>Papago Translation plugin Only Korean to English</strong>
+      <strong>Papago Translation plugin</strong>
       <br/>
       <ul>
         <li>Translate after check : option+1</li>
@@ -20,13 +20,30 @@
       </ul>
       <br/>
       <br/>
+      <strong>Translatable combination <a href="https://developers.naver.com/docs/nmt/reference/#3--%EC%9A%94%EC%B2%AD-%EB%B3%80%EC%88%98">list</a></strong>
+      <br/>
+      <ul>
+        <li>Korean <-> English</li>
+        <li>Korean <-> Japanese ( Not official )</li>
+        <li>Korean <-> Simplified Chinese</li>
+        <li>Korean <-> Traditional Chinese</li>
+        <li>Korean <-> Spanish</li>
+        <li>Korean <-> French</li>
+        <li>Korean <-> Vietnamese</li>
+        <li>Korean <-> Teguk</li>
+        <li>Korean <-> Indonesian</li>
+        <li>English <-> Japanese</li>
+        <li>English <-> French</li>
+      </ul>
+      <br/>
+      <br/>
       <i>Compiled with Java 1.8</i>
     ]]></description>
 
     <change-notes><![CDATA[
-      <a href="https://github.com/jin5u/papago-translator"><b>v.0.0.1</b></a> (2018-5-28) <br/><br/>
+      <a href="https://github.com/jin5u/papago-translator/releases/tag/v0.1.0"><b>v.0.1.0</b></a><br/><br/>
       <ul>
-        <li>0.1.0: Apply multiple languages ( A translatable combination <a href="https://developers.naver.com/docs/nmt/reference/#3--%EC%9A%94%EC%B2%AD-%EB%B3%80%EC%88%98">list</a>) </li>
+        <li>0.1.0: Apply multiple languages ( Translatable combination <a href="https://developers.naver.com/docs/nmt/reference/#3--%EC%9A%94%EC%B2%AD-%EB%B3%80%EC%88%98">list</a>) </li>
         <li>0.0.1: Project initiate</li>
       </ul>
     ]]>
