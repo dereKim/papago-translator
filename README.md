@@ -36,7 +36,7 @@
 
 
 
-![키등록](./screenshot/apply-id-and-key.png)
+![키등록](screenshot/configuration.png)
 
 
 ### Change notes
